@@ -4,16 +4,12 @@
   box-sizing: border-box;
 }
 
-
-
 .page {
-  
-  height: 100vh;
-  width: 100vw;
+  height: 200vh;
   /* background-color: aqua; */
   display: grid;
   grid-template:
-    "page-aside page-header " 100px
+    "page-aside page-header " 60px
     "page-aside sub-header" 50px
     "page-aside page-main " 1fr/
     0.1fr 1fr;
@@ -23,69 +19,79 @@
   /* background-color: hsl(0deg 0% 9%); */
   grid-area: page-header;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
- justify-content: space-around;
- /* grid-gap: 80rem; */
- grid-gap: 90px;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content: space-around;
+  /* grid-gap: 80rem; */
+  grid-gap: 90px;
 
- align-items: center;
- color: white;
- 
-
-  
+  align-items: flex-start;
+  /* align-items: center; */
+  color: white;
 }
 
-.youtube-logo{
+.youtube-logo {
+  /* background-color: rgb(186, 196, 167); */
   height: 50px;
-  width: 100px;
-  
- 
-  
+  width: 100%;
+  background-image: url(https://logolook.net/wp-content/uploads/2021/06/Youtube-Logo.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
 
+  object-fit: fill;
+  display: grid;
 }
 
-
-.searchbar{
-  
+.searchbar {
   display: grid;
   grid-auto-flow: column;
   outline: 1px solid red;
   background-color: rgb(138, 103, 172);
-  
+  width: 500px;
 }
+.searchbar-inside{
+  width: 400px;
+
+}
+
+
+
+.voice{
+  color: black;
+  display: grid;
+  grid-auto-flow: column;
+}
+
 .sign-in {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-outline: 1px solid red;
-color: black
+  outline: 1px solid red;
+  color: black;
 }
 
-.sign-in-link{
+.sign-in-link {
   color: #3da0f5;
 }
 
-.sub-header{
+.sub-header {
   display: grid;
   border-top: 1px solid;
   border-bottom: 1px solid;
   align-items: center;
-  
-
 }
 
-.suggestions{
+.suggestions {
   display: grid;
   grid-auto-flow: column;
-  
+  grid-gap: 20px;
+  padding-left: 20px;
 }
-.categories{
+.categories {
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
   /* color: hsl(0deg 0% 100%); */
   background-color: rgba(81, 128, 128, 0.438);
- 
 }
 
 .page-aside {
@@ -93,9 +99,27 @@ color: black
   background-color: rgba(137, 43, 226, 0.521);
 }
 
+.ul-list-item {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.li-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+
 .page-main {
   grid-area: page-main;
   background-color: rgba(166, 255, 0, 0.459);
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  align-items: center;
   
 }
 
+.video{
+  outline: 4px solid rgb(207, 25, 25);
+  
+
+}
