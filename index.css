@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.page {
+  
+  height: 100vh;
+  width: 100vw;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template:
+    "page-aside page-header " 100px
+    "page-aside sub-header" 50px
+    "page-aside page-main " 1fr/
+    0.1fr 1fr;
+}
+
+.page-header {
+  /* background-color: hsl(0deg 0% 9%); */
+  grid-area: page-header;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+ justify-content: space-around;
+ /* grid-gap: 80rem; */
+ grid-gap: 90px;
+
+ align-items: center;
+ color: white;
+ 
+
+  
+}
+
+.youtube-logo{
+  height: 50px;
+  width: 100px;
+  
+ 
+  
+
+}
+
+
+.searchbar{
+  
+  display: grid;
+  grid-auto-flow: column;
+  outline: 1px solid red;
+  background-color: rgb(138, 103, 172);
+  
+}
+.sign-in {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+outline: 1px solid red;
+color: black
+}
+
+.sign-in-link{
+  color: #3da0f5;
+}
+
+.sub-header{
+  display: grid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  align-items: center;
+  
+
+}
+
+.suggestions{
+  display: grid;
+  grid-auto-flow: column;
+  
+}
+.categories{
+  border: 1px solid;
+  border-radius: 30px;
+  text-align: center;
+  /* color: hsl(0deg 0% 100%); */
+  background-color: rgba(81, 128, 128, 0.438);
+ 
+}
+
+.page-aside {
+  grid-area: page-aside;
+  background-color: rgba(137, 43, 226, 0.521);
+}
+
+.page-main {
+  grid-area: page-main;
+  background-color: rgba(166, 255, 0, 0.459);
+  
+}
+
