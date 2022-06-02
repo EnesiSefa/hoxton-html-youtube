@@ -164,4 +164,17 @@
   display: grid;
   overflow: hidden;
   place-content: center;
+
+}
+
+.image-post{
+  height: 100%;
+  width: 100%;
+}
+
+
+.icon-post{
+  height: 20px;
+  width: 20px;
+
 }

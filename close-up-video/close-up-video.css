@@ -6,7 +6,7 @@
 
 .page {
   height: 100vh;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: grid;
   grid-template:
     "page-header " 60px
@@ -19,22 +19,33 @@
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  
 }
 
 .youtube-logo {
-    /* background-color: rgb(186, 196, 167); */
-    height: 50px;
-    width: 100%;
-    background-image: url(https://logolook.net/wp-content/uploads/2021/06/Youtube-Logo.svg);
-    background-size: 100px;
-    background-repeat: no-repeat;
-  
-    object-fit: fill;
-    display: grid;
-  }
+  /* background-color: rgb(186, 196, 167); */
+  height: 50px;
+  width: 100%;
+  background-image: url(https://logolook.net/wp-content/uploads/2021/06/Youtube-Logo.svg);
+  background-size: 100px;
+  background-repeat: no-repeat;
 
+  object-fit: fill;
+  display: grid;
+}
 
 .page-main {
-  background-color: rgb(48, 48, 238);
+  /* background-color: rgb(48, 48, 238); */
+  display: grid;
+  grid-template:
+    "main-video side-videos  " 1fr/
+    1fr 0.2fr;
+}
+
+.main-video{
+  background-color: rgba(255, 0, 0, 0.582);
+}
+
+
+.side-videos{
+  background-color: aquamarine;
 }
