@@ -221,6 +221,7 @@
 }
 
 
-@media screen {min
+@media (max-width: 500px) {
+   .page-aside{ background-color: yellow;}
   
 }
